@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css" />
+    <title>
+      Chase Dooley is is writing essays and creating websites in Colorado.
+    </title>
+  </head>
+  <body>
+    <main>
+      <h1>
+        <strong>Chase Dooley</strong> is writing essays and creating websites in
+        Colorado.
+      </h1>
+      <p>
+        <a href="mailto:chase@chasedooley.com">chase@chasedooley.com</a> <br />
+        <a href="https://dribbble.com/chasedooley" target="_blank">Dribbble</a>
+        -
+        <a href="https://github.com/chasedooley" target="_blank">Github</a> -
+
+        <a href="https://www.linkedin.com/in/dooleychase" target="_blank"
+          >LinkedIn</a
+        >
+        -
+        <a href="https://medium.com/@chasedooley" target="_blank">Medium</a>
+        -
+        <a href="https://chasedooley.substack.com/" target="_blank">Substack</a>
+      </p>
+      <section class="row">
+        <aside class="col">
+          <h2>Essays</h2>
+          <ul class="content">
+            {% for post in site.posts %}
+            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </aside>
+        <aside class="col">
+          <h2>Projects</h2>
+          <ul class="content">
+            <li>Dooley's Library (soon)</li>
+            <li>This website, version 4 (what you see)</li>
+            <li>
+              <a href="{{base.url}}/v3#welcome">This website, version 3</a>
+            </li>
+            <li><a href="{{base.url}}/bv1">Chase's Blog, version 1</a></li>
+            <li>
+              <a href="https://completeoutdoor.solutions" target="_blank">
+                Complete Outdoor Solutions
+              </a>
+            </li>
+            <li>
+              <a href="https://brinkmann.pro" target="_blank">Brinkmann 2020</a>
+            </li>
+            <li>
+              <a href="https://everett.pro" target="_blank">Everett Dittmer</a>
+            </li>
+          </ul>
+        </aside>
+      </section>
+    </main>
+  </body>
+</html>

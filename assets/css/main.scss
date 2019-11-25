@@ -1,0 +1,16 @@
+---
+---
+
+// Configuration
+@import url("https://fonts.googleapis.com/css?family=Merriweather&display=swap");
+
+$fonts: "Merriweather", serif;
+$bg-color: #fff;
+$text-color: #222;
+$primary: #370aff;
+$font-size: 1.125rem;
+$lead: 1.72em;
+
+@import "foundation";
+@import "typography";
+@import "components";

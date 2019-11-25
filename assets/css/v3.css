@@ -1,0 +1,231 @@
+/* Font imports */
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville|Roboto:700&display=swap");
+
+/* General styling */
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: #fff;
+  color: #2c2e33;
+  font-family: "Libre Baskerville", Georgia, Times, "Times New Roman", serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.container {
+  width: 100%;
+  max-width: 680px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+main.container {
+  margin-top: 5rem;
+}
+
+article {
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 650px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
+@media (min-width: 650px) {
+  body {
+    font-size: 1.125rem;
+  }
+}
+
+/* Welcome splash */
+#welcome {
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome h1 {
+  text-align: center;
+}
+
+.fa-angle-down {
+  position: absolute;
+  bottom: 50px;
+}
+
+footer {
+  margin: 1rem 0 1rem 0;
+}
+
+.hl-blue {
+  background-color: #adc7ff;
+}
+
+.hl-yellow {
+  background-color: #f0ffad;
+}
+
+.hl-orange {
+  background-color: #ffbcad;
+}
+
+#profile {
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+  #profile {
+    display: block;
+  }
+}
+
+.headshot {
+  width: 28%;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+
+.title h2 {
+  font-size: 2rem;
+}
+
+/* Typography */
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", Arial;
+  margin: 0;
+}
+
+h1 {
+  font-size: 250%;
+  line-height: 1.2;
+  margin: 0 auto;
+}
+h2 {
+  font-size: 1.375rem;
+}
+h3 {
+  font-size: 1.25rem;
+  margin: 2rem 0 0 0;
+}
+h4 {
+  font-size: 1rem;
+}
+h5 {
+  font-size: 1rem;
+}
+h6 {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+a {
+  color: #0a58ff;
+  text-decoration: none;
+  border-bottom: 2px solid #adc7ff;
+}
+
+a:hover {
+  border-bottom-color: #0a58ff;
+}
+
+ul,
+ol,
+p {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+ul {
+  list-style: disc;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 400%;
+    line-height: 1.5;
+    margin: 0 auto;
+  }
+  h2 {
+    font-size: 1.375rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  h4 {
+    font-size: 1.125rem;
+  }
+  h5 {
+    font-size: 1.125rem;
+  }
+  h6 {
+    font-size: 1.125rem;
+    font-style: italic;
+  }
+}
+
+@media (min-width: 1050px) {
+  h1 {
+    font-size: 600%;
+  }
+}
+
+/* Navigation */
+
+nav {
+  text-align: center;
+}
+
+.nav-link {
+  font-family: "Roboto", Arial;
+  font-size: 1.375rem;
+  color: #2c2e33;
+  border-bottom: 0;
+  transition: color 0.3s;
+  height: 40px;
+  margin-bottom: 1rem;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: #0a58ff;
+}
+
+footer {
+  text-align: center;
+}
+
+.is-hidden {
+  display: none;
+}
+
+#fullLength {
+  border-radius: 5px;
+  background-color: #ddd;
+  padding: 5px;
+}

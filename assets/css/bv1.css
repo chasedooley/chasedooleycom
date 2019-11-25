@@ -1,0 +1,230 @@
+/* Font imports */
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville|Roboto:700&display=swap");
+
+/* General styling */
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: #fff;
+  color: #2c2e33;
+  font-family: "Libre Baskerville", Georgia, Times, "Times New Roman", serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.container {
+  width: 100%;
+  max-width: 680px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  margin-top: 2rem;
+}
+
+@media (max-width: 650px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
+@media (min-width: 650px) {
+  body {
+    font-size: 1.125rem;
+  }
+}
+
+/* Welcome splash */
+
+footer {
+  margin: 1rem 0 1rem 0;
+}
+
+.headshot {
+  width: 30%;
+  border-radius: 10%;
+  display: block;
+  margin: 1rem auto;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", Arial;
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.675rem;
+  line-height: 1.2;
+}
+h2 {
+  font-size: 1.375rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 1rem;
+}
+h5 {
+  font-size: 1rem;
+}
+h6 {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+a {
+  color: #0a58ff;
+  text-decoration: none;
+  border-bottom: 2px solid #adc7ff;
+}
+
+a:hover {
+  border-bottom-color: #0a58ff;
+}
+
+ul,
+ol,
+p {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+ul {
+  list-style: disc;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2rem;
+    line-height: 1.5;
+    margin: 0 auto;
+  }
+  h2 {
+    font-size: 1.675rem;
+  }
+  h3 {
+    font-size: 1.375rem;
+  }
+  h4 {
+    font-size: 1.125rem;
+  }
+  h5 {
+    font-size: 1.125rem;
+  }
+  h6 {
+    font-size: 1.125rem;
+    font-style: italic;
+  }
+}
+
+/* Navigation */
+
+nav {
+  text-align: center;
+}
+
+.nav-link {
+  font-family: "Roboto", Arial;
+  font-size: 1.375rem;
+  color: #2c2e33;
+  border-bottom: 0;
+  transition: color 0.3s;
+  height: 40px;
+  margin-bottom: 1rem;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: #0a58ff;
+}
+
+footer {
+  text-align: center;
+}
+
+.is-hidden {
+  display: none;
+}
+
+/* Buttons */
+.button {
+  font-family: "Roboto", Arial;
+  font-size: 1.125rem;
+  padding: 0.35rem 1.25rem;
+  color: #fff;
+  border: 2px solid #0a58ff;
+  background: #0a58ff;
+  border-radius: 5px;
+  margin: 0.5rem auto 0 auto;
+  cursor: pointer;
+}
+
+header {
+  margin-top: 1rem;
+}
+
+/* Columns */
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .row {
+    display: block;
+  }
+  .column {
+    width: 100%;
+  }
+}
+
+/* Content list */
+.content-list {
+  list-style: none;
+}
+
+.post-title {
+  color: #2c2e33;
+  border: 0;
+}
+
+.post-title:hover {
+  border-bottom: 2px solid #2c2e33;
+}
+
+/* Search bar */
+input[type="text"] {
+  width: 90%;
+  padding: 8px;
+  border: 2px solid #acaeb3;
+  border-radius: 3px;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+input[type="text"]:focus {
+  border: 2px solid #0a58ff;
+}
+
+.full-bleed {
+  width: 100%;
+}

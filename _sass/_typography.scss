@@ -1,0 +1,96 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  background-color: $bg-color;
+  color: $text-color;
+  font-size: $font-size;
+  line-height: $lead;
+  font-family: $fonts;
+}
+
+// Headers
+
+h1 {
+  font-weight: normal;
+  font-size: 2.6rem;
+  margin-bottom: 75px;
+  line-height: ($lead * 0.8);
+}
+
+h2 {
+  font-size: 2rem;
+  margin: ($lead * 1.2) 0 ($lead * 0.2) 0;
+}
+
+h3 {
+  font-size: 1.6rem;
+  margin: ($lead * 1.2) 0 ($lead * 0.2) 0;
+}
+
+h4 {
+  font-size: 1.25rem;
+  margin: ($lead * 1.2) 0 ($lead * 0.2) 0;
+}
+
+// Body text
+
+p {
+  margin: $lead 0 $lead 0;
+}
+
+#signature {
+  display: block;
+  text-align: right;
+  margin-top: 75px;
+}
+
+blockquote {
+  margin: 0 0 0 $lead;
+}
+
+// Horizontal rule
+hr:before {
+  content: "***";
+  letter-spacing: 0.2em;
+}
+
+hr {
+  margin: ($lead * 2) auto;
+  color: $text-color;
+  text-align: center;
+  border: 0;
+  display: block;
+}
+
+// Links
+
+a {
+  color: $text-color;
+}
+
+a:hover {
+  color: $primary;
+}
+
+// Lists
+
+.content {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+ul,
+ol {
+  margin: $lead 0 $lead 0;
+}
+
+li {
+  padding: 0.3rem;
+}
+
+::selection {
+  background-color: $text-color;
+  color: $bg-color;
+}

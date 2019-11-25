@@ -1,0 +1,6 @@
+name: chasedooley.com
+
+sass:
+  sass_dir: _sass
+
+excerpt_separator: <!--excerpt-->
